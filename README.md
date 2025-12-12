@@ -1,4 +1,4 @@
-# _Sample project_
+# _COMP0221_Coursework1_
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
@@ -23,10 +23,32 @@ Below is short explanation of remaining files in the project folder.
 
 ```
 ├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
+├── README.md                This is the file you are currently reading
+├── dependencies.lock
+├── .gitignore
+├── .clangd
+├── core/
+│   ├── EspHal.h
+│   ├── compute_cmac.c
+│   ├── compute_cmac.h
+│   ├── flocking_control.c
+│   ├── flocking_control.h
+│   ├── monitor_task.c
+│   ├── monitor_task.h
+│   ├── neighbour_table.cpp
+│   ├── neighbour_table.h
+│   ├── physics_integration.c
+│   ├── physics_integration.h
+│   ├── telemetry.c
+│   └── telemetry.h
+├── main/
+│   ├── CMakeLists.txt
+|   ├── idf_component.yml
+|   ├── config.h
+│   ├── main.c
+│   └── replay_attack.c
+├── mac_dict.py
+└── visualiser.py
 ```
 Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
 They are not used or needed when building with CMake and idf.py.
