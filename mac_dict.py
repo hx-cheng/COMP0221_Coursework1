@@ -1,0 +1,2 @@
+DRONE_NAMES = {
+}
