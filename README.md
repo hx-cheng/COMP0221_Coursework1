@@ -11,9 +11,9 @@ that copies the project to user specified path and set it's name. For more infor
 We encourage the users to use the example as a template for the new projects.
 A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
 
-## Example folder contents
+## Folder contents
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
+The project contains two source file in C language [main.c](main/main.c) and [replay_attack.c](main/replay_attack.c). These files are located in folder [main](main).
 
 ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
 files that provide set of directives and instructions describing the project's source files and targets
