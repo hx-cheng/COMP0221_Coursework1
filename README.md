@@ -1,23 +1,13 @@
 # _COMP0221_Coursework1_
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
-
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
-
-
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
-
 ## Folder contents
 
-The project contains two source file in C language [main.c](main/main.c) and [replay_attack.c](main/replay_attack.c). These files are located in folder [main](main).
+The project contains two source file in C language [main.c](main/main.c) and [attack.c](main/attack.c). The files are located in folder [main](main).
 
 ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
 files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
+(executable, library, or both). Switch between normal ditributed flocking control system and attack 
+system by manually change the path in CMakeLists.txt. 
 
 Below is short explanation of remaining files in the project folder.
 
@@ -46,9 +36,7 @@ Below is short explanation of remaining files in the project folder.
 |   ├── idf_component.yml
 |   ├── config.h
 │   ├── main.c
-│   └── replay_attack.c
+│   └── attack.c
 ├── mac_dict.py
 └── visualiser.py
 ```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
